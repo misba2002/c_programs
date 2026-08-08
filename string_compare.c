@@ -36,11 +36,18 @@ int main()
     int equal=1;
     for(int i=0; i<str1_length; i++)
     {
-        if(str1[i]!=str2[i])
+        
+        if(str1[i]-str2[i] == 32 || str1[i]-str2[i] == -32 || str1[i] == str2[i])
+        {
+         equal=1;
+         
+        }
+        else
         {
          equal=0;
          break;
-        }
+        } 
+        
     }
     if(equal==1)
     {
@@ -55,15 +62,16 @@ int main()
         equal=1;
         for(int j=0; j<str2_length; j++)
         {
-             if(str1[i]!=str2[j])
+             if(str1[i]-str2[j] == 32 || str1[i]-str2[j] == -32 || str1[i] == str2[j])
             {
-                equal=0;
+                equal=1;
+                break;
             
             }
             else 
             {
-                equal = 1;
-                break;
+                equal = 0;
+                
             }
            
 
@@ -77,7 +85,7 @@ int main()
     }
     if(equal==1)
     {
-        printf("Strings are equal but order is changed of %s and %s\n ", str1, str2);
+        printf("Strings are equal but order is changed of %s and %s (IGNORING CASE)\n ", str1, str2);
         return 0;
     }
 
