@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// SORTING IN DECREASING ORDER
 void count_print(int *arr, int size, int element)
 {
     int count=0;
