@@ -83,7 +83,7 @@ int main()
        }
 
        printf("\n");
-       printf("Orignal array is:");
+    printf("Orignal array is:");
     for(int i=0; i<size; i++)
     {
         printf("%d ", arr[i]);
