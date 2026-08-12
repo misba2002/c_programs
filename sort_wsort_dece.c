@@ -70,6 +70,8 @@ int main()
 
     }
 
+   
+
      count_print(arr, size, largest);
      
      int next_value=largest;
@@ -79,6 +81,13 @@ int main()
             next_value= second_largest(arr, size , next_value, smallest);
             count_print(arr, size, next_value);
        }
+
+       printf("\n");
+       printf("Orignal array is:");
+    for(int i=0; i<size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
       
      
     
