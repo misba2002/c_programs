@@ -6,19 +6,22 @@ int main()
     printf("Enter n:");
     int n;
     scanf("%d", &n);
-    
-    // int val = n & (-n);
 
-    int i=0, flag=0;
-    while(flag!=1)
+    if(n == 0)
     {
-        if(n & (1<<i))
-        {
-            printf("position is %d\n", i);
-            flag=1;
-        }
-        i++;
+        printf("all bits are 0\n");
+        return 0;
+    }
+    
+    int val = n & (-n);
+
+     int i=0; 
+    while(val > 1)
+    {
+       val = val >> 1;
+       i++;
 
     }
+    printf("position at %d\n", i);
 
 }
