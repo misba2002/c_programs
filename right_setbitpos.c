@@ -1,4 +1,5 @@
 #include<stdio.h>
+// FIND FIRST SET BIT FROM RIGHT OR LSB
 int main()
 {
     
