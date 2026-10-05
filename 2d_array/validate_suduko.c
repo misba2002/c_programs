@@ -100,8 +100,12 @@ int suduko_validater(int row, int col,int (*arr)[col])
             jstart=0;
             jend=box_size;
         }
+        else
+        {
         jstart=jstart+box_size;
         jend=jend+box_size;
+        }
+      
        
 
     }
