@@ -1,4 +1,5 @@
 #include<stdio.h>
+// wap to swap nibbel using macro function
 #define SWAP(lower, upper) \
     ((lower) ^= (upper),   \
      (upper) ^= (lower),   \
