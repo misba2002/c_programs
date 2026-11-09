@@ -13,7 +13,16 @@ void tower_of_hanoi(int n, char A, char B, char C)
 }
 int main()
 {
-
-    tower_of_hanoi(3,'A','B','C');
+    int disc;
+    printf("Enter disc size:");
+    scanf("%d", &disc);
+    if(disc==0)
+    {
+        printf("Invalid input disc cannt be 0\n");
+        return 0;
+    }
+    printf("Moves are:\n");
+    tower_of_hanoi(disc,'A','B','C');
+    return 0;
 
 }
